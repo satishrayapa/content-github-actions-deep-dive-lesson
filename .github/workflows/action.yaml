@@ -4,13 +4,13 @@ on:
     branches:
       - main
 jobs:
-  builds: 
+  build: 
     run-on: ubuntu-latest
     steps:
       - name: Check out Code
-        use: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: setup python
-        use: actions/setup-python@v2
+        uses: actions/setup-python@v2
         with:
           python-version: 3.8
       - name: Install libraries
